@@ -1,0 +1,32 @@
+{
+  "name": "gerardomestanza",
+  "version": "1.0.0",
+  "description": "Portfolio to show my work",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "portfolio",
+    "node",
+    "web",
+    "dev"
+  ],
+  "author": "Gerardo Mestanza",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7"
+  }
+}
