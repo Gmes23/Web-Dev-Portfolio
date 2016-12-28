@@ -79,9 +79,15 @@ a{
   top: 60px;
   letter-spacing: 5px;
   position: absolute;
-  color: rgb(49,58,61);
+  color: white;
+  z-index: 1;
 }
 
+.gmBackground{
+  padding-right: 6.295%;
+  padding-left:  6.295%;
+  z-index: -100;
+}
 .gmBackground>div{
   min-height:100vh;
   float: left;
@@ -89,7 +95,14 @@ a{
   border-right: solid;
   border-color: #edf5f8;
   border-width: 1px;
-  z-index: -10;
+  z-index: -100;
+}
+
+.gmColLeft{
+  border-left: solid;
+  border-color: #edf5f8;
+  border-width: 1px;
+  z-index: -100;
 }
 
 .gmMain2 {
@@ -98,12 +111,13 @@ a{
   height: 100vh;
   width: 100%;
   padding-right: 16.6666666%;
-  padding-left: 16%;
+  padding-left: 16.6666667%;
 }
 
 .gmMainText{
   position: absolute;
   top: 200px;
+  left: 19.6666667%;
 }
 
 .gmMainText>h1{
@@ -131,4 +145,48 @@ a{
   {
     font-size: 5em;
   }
+}
+
+.gmMainPic1{
+  position: absolute;
+  width: 16.667%;
+  top: 50px;
+  height: 400px;
+  background-image: url("../img/3.jpg");
+  background-size:cover;
+  z-index: 0;
+  left: 13.667%
+}
+
+.gmLogo:before {
+    content: "GM";
+    width: 47%;
+    position: absolute;
+    color: rgb(49,58,61);
+    overflow: hidden;
+}
+
+
+.gmMainPic2{
+  position: absolute;
+  top: 150px;
+  width: 43.905%;
+  height: 400px;
+  background-image: url("../img/5.jpg");
+  background-size: cover;
+  background-position: center;
+  left: 35.4334%;
+  z-index: .1;
+}
+
+.gmMainPic3{
+  position: absolute;
+  bottom: 50px;
+  width: 26.6667%;
+  height: 200px;
+  right: 6.667%;
+  background: red;
+  background-image: url("../img/6.jpg");
+  background-size:cover;
+  z-index: 0;
 }
