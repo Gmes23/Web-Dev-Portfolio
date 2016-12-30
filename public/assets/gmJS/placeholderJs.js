@@ -1,20 +1,20 @@
 
-$('.gmMain2').each(function(i) {
+$('.wrap').each(function(i) {
 
 	var $wrap = $(this),
-		$active = $wrap.find('.gmshow').first(),
+		$active = $wrap.find('.active').first(),
 		$prev = $active.prev(),
 		$next = $active.next();
 
-	if( !$prev.length ) $prev = $wrap.find('.gmshow').last();
-	if( !$next.length ) $next = $wrap.find('.gmshow').first();
+	if( !$prev.length ) $prev = $wrap.find('.article').last();
+	if( !$next.length ) $next = $wrap.find('.article').first();
 
 	$prev.addClass('prev');
 	$next.addClass('next');
 });
 
 
-$('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
+$('.wrap').on('mousewheel', function(event, delta, deltaX, deltaY) {
 
 	event.preventDefault();
 
@@ -22,7 +22,7 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
   // lastUpdate = thisUpdate;
 	// if( thisUpdate - lastUpdate < 500 ) return;
 
-	$('.gmMain2').each(function() {
+	$('.wrap').each(function() {
 
 		var $wrap = $(this),
 			$active = $wrap.find('.active'),
@@ -45,7 +45,7 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 				.addClass('active')
 				.prev();
 
-			if( !$tmp.length ) $tmp = $wrap.find('.gmshow').last();
+			if( !$tmp.length ) $tmp = $wrap.find('.article').last();
 
 			$tmp
 				.removeClass('next')
@@ -66,7 +66,7 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 				.addClass('active')
 				.next();
 
-			if( !$tmp.length ) $tmp = $wrap.find('.gmshow').first();
+			if( !$tmp.length ) $tmp = $wrap.find('.article').first();
 
 			$tmp
 				.removeClass('prev')
@@ -76,3 +76,13 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 		}
 	});
 });
+
+
+<!--
+<div class="wrap">
+  <div class="article active"></div>
+  <div class="article">14;</div>
+  <div class="article">06;</div>
+  <div class="article">0;</div>
+  <div class="article">e;</div>
+</div> -->
