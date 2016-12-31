@@ -8,12 +8,9 @@ html{
   border: 0;
 }
 
-a{
-  text-decoration: none;
-  cursor: pointer;
-}
-a:hover{
-  cursor: pointer;
+a, a:hover, a:active, a:visited {
+    text-decoration:none,!important;
+    cursor: pointer;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -21,6 +18,10 @@ a:hover{
 @font-face {
   font-family: Atami-Regular;
   src: url(./Atami-Regular.otf);
+}
+@font-face {
+  font-family: Abyssopelagic;
+  src: url(./Abyssopelagic.otf);
 }
 @font-face {
   font-family: Kano;
@@ -45,6 +46,39 @@ a:hover{
 }
 
 
+@-moz-keyframes slideUp {
+  from {
+      height: 0%;
+  } 60% {
+      height: 4%;
+  } 70% {
+      height: 8%;
+  } 80% {
+      height: 12%;
+  } 90% {
+      height: 16%;
+  } 100% {
+      height: 20%;
+  }
+}
+
+@keyframes slideUp {
+  from {
+      height: 0%;
+  } 60% {
+      height: 4%;
+  } 70% {
+      height: 8%;
+  } 80% {
+      height: 12%;
+  } 90% {
+      height: 16%;
+  } 100% {
+      height: 20%;
+  }
+}
+
+
 .gmNav{
   position: absolute;
   height: 150px;
@@ -53,18 +87,31 @@ a:hover{
   padding-left: 17.6666666%;
 }
 
-.col-gd-2>a{
+.gmNavfromMain{
   position: absolute;
   margin-left: 10px;
   top: 10%;
   color: rgb(49,58,61);
   cursor: pointer;
-  text-decoration: line-through;
+  text-decoration: none;
   font-family: 'moderno';
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
+  z-index: 1000;
 }
+
+.gmNavfromMain:hover{
+  /*text-decoration: line-through;*/
+  color: rgb(49,58,61);
+  text-decoration: none;
+}
+
+.gmNavfromMain:active {
+  color: rgb(49,58,61);
+  text-decoration: none;
+}
+
 
 .gmSocialMedia{
   position: absolute;
@@ -76,6 +123,45 @@ a:hover{
   z-index: 10;
 }
 
+.gmArrow{
+  position: absolute;
+  transform: rotate(270deg);
+  transform-origin: 10px;
+  bottom: 20px;
+  left: 10%;
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  animation-duration:2s infinite;
+  -webkit-animation-duration: 2s infinite;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  color: rgb(235,236,238);
+}
+
+
+.gmArrow>p{
+  transform: rotate(70deg);
+    transform-origin: 10px;
+    position: absolute;
+    font-size: 1.2em;
+    left: 100px;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
 .gmSocialNav>a{
   transform: rotate(270deg);
   transform-origin: 10px;
@@ -84,6 +170,14 @@ a:hover{
   display: inline-flex;
   line-height: 8;
   cursor: pointer;
+  font-family: 'Abyssopelagic';
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgb(49,58,61);
+}
+.gmSocialNav>a:hover{
+  text-decoration: none;
+  color: rgb(49,58,61);
 }
 
 .socialLinks{
@@ -137,6 +231,7 @@ a:hover{
   top: 200px;
   left: 24%;
   z-index: 5;
+
 }
 
 .gmMainText>h1{
@@ -236,6 +331,7 @@ a:hover{
   width: 100%;
   padding-right: 16.6666666%;
   padding-left: 16.6666667%;
+
 }
 
 .gmshow.active{
@@ -296,13 +392,202 @@ a:hover{
   font-style: normal;
   font-weight: 700;
   color: rgb(49,58,61);
+  text-transform: uppercase;
+
 }
 
 .gmProjectInfo{
   position: absolute;
   width: 400px;
   height: 400px;
-  background-color: red;
+  /*background-color: red;*/
   top: 200px;
   left: 10%;
+}
+
+
+.gmMainText>p{
+  font-size: 1.5em;
+  font-family: 'Kano', sans-serif;
+  font-style: normal;
+  line-height: 30px;
+  margin-top: 30px;
+  font-weight: 700;
+  color: rgb(84,182,195);
+  text-transform: lowercase;
+}
+
+.gmMainText>a{
+  font-family: 'moderno', sans-serif;
+  font-style: normal;
+  text-decoration: none, !important;
+  color: rgb(49,58,61);
+  margin-right: 60px;
+  margin-top: 50px;
+  line-height: 100px;
+  font-style: normal;
+    font-weight: 700;
+
+}
+
+.gmMainText>a:hover{
+  text-decoration: none;
+  color: rgb(219,21,38, 0.9);
+}
+/*
+.gmInfoHolder{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(49,58,61);
+  padding: 20px;
+}
+
+.gmInfoHolder>h2{
+  margin-top: 0px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.gmInfoHolder>p{
+  color: white;
+}*/
+
+.slideUp{
+	animation-name: grow;
+	-webkit-animation-name: grow;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+	animation-duration:  .7s;
+	-webkit-animation-duration:  .7s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+
+	visibility: visible !important;
+}
+
+@-moz-keyframes grow {
+  0% {
+    display: none;
+    height: 0px;
+  }
+  1% {
+    display: block;
+    height: 0px;
+    /*transform: scale(0);*/
+  }
+  100% {
+    height: 350px;
+    /*transform: scale(1);*/
+  }
+}
+
+/*@keyframes grow {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0%;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    height: 0px;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    height: 350px;
+    transform: scale(1);
+  }
+}*/
+
+
+@keyframes grow {
+  0% {
+    display: none;
+    height: 0px;
+  }
+  1% {
+    display: block;
+    height: 0px;
+  }
+  100% {
+    height: 350px;
+  }
+}
+
+@keyframes hehe {
+  from {height: 350px;}
+  to {height: 0px;}
+}
+@-moz-keyframes slide /* Firefox */
+{
+  from {height: 350px;}
+  to {height: 0px;}
+}
+
+@-webkit-keyframes slide /* Safari and Chrome */
+{
+  from {height: 350px;}
+  to {height: 0px;}
+}
+
+@-o-keyframes slide /* Opera */
+{
+  from {height: 350px;}
+  to {height: 0px;}
+}
+
+@-ms-keyframes slide /* IE10 */
+{
+from {height: 350px;}
+to {height: 0px;}
+}
+
+@keyframes slide
+{
+from {height: 0;}
+to {height: 300px;}
+}
+
+
+.gmESpan1 {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.gmESpan1:before, .gmESpan1:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: rgb(141,41,52);
+}
+
+.gmESpan1:before {
+  left: -2.5px;
+}
+.gmESpan1:after {
+  right: 2.5px;
+  background: rgb(141,41,52);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.gmESpan1:hover:before {
+  background: rgb(141,41,52);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.gmESpan1:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
