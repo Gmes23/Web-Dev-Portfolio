@@ -73,3 +73,51 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 		}
 	});
 });
+
+
+$('a').click(function(event) {
+
+event.preventDefault();
+newLocation = this.href
+
+  $('body').fadeOut(500,newpage);
+
+
+});
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+
+$(function() {
+  $('.gmSelectHov1').hover(function() {
+		$('#testman').removeClass().addClass('gmPortHov1');
+  });
+	return;
+});
+
+$(function() {
+  $('.gmSelectHov2').hover(function() {
+
+		$('#testman').removeClass().addClass('gmPortHov2');
+  });
+});
+
+$(function() {
+  $('.gmSelectHov3').hover(function() {
+		$('#testman').removeClass().addClass('gmPortHov3');
+  });
+});
+$(function() {
+  $('.gmSelectHov4').hover(function() {
+		$('#testman').removeClass().addClass('gmPortHov4');
+  });
+});
+$(function() {
+  $('.gmSelectHov5').hover(function() {
+		$('#testman').removeClass().addClass('gmPortHov5');
+  });
+});
