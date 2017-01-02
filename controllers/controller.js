@@ -21,5 +21,17 @@ router.get('/work-1', function(req, res){
   res.render('work-1');
 });
 
+router.get('/work-2', function(req, res){
+  res.render('work-2');
+});
+
+router.get('/work-3', function(req, res){
+  res.render('work-3');
+});
+
+router.get('/work-4', function(req, res){
+  res.render('work-4');
+});
+
 
 module.exports = router;
