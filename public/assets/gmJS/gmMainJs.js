@@ -18,6 +18,9 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 
 	event.preventDefault();
 
+	// var thisUpdate = Date(milliseconds);
+	// lastUpdate = thisUpdate;
+	// if( thisUpdate - lastUpdate < 500 ) return;
 
 	$('.gmMain2').each(function() {
 
