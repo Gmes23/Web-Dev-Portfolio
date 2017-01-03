@@ -33,5 +33,8 @@ router.get('/work-4', function(req, res){
   res.render('work-4');
 });
 
+router.get('/testfile', function(req, res){
+  res.render('testfile');
+});
 
 module.exports = router;

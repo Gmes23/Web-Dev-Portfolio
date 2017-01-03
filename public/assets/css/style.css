@@ -371,7 +371,7 @@ a, a:hover, a:active, a:visited {
   top: 200px;
   width: 43.905%;
   height: 350px;
-  background-image: url("../img/1.jpg");
+  background-image: url("../img/21.png");
   background-size: cover;
   background-position: center;
   left: 35.4334%;
@@ -383,7 +383,7 @@ a, a:hover, a:active, a:visited {
   top: 200px;
   width: 43.905%;
   height: 350px;
-  background-image: url("../img/gmProject1.png");
+  background-image: url("../img/24.jpg");
   background-size: cover;
   background-position: center;
   left: 35.4334%;
@@ -395,7 +395,7 @@ a, a:hover, a:active, a:visited {
   top: 200px;
   width: 43.905%;
   height: 350px;
-  background-image: url("../img/6.jpg");
+  background-image: url("../img/30inuse.jpg");
   background-size: cover;
   background-position: center;
   left: 35.4334%;
@@ -1052,4 +1052,79 @@ to {height: 300px;}
 .leftGMArrow:hover{
   text-decoration: none;
   color: rgb(230,82,101);
+}
+
+.testArrow{
+  position: absolute;
+  -webkit-animation:bounce 1s infinite;
+
+}
+
+
+@-webkit-keyframes bounce {
+ 0%       { left:5px; }
+ 25%, 75% { left:15px; }
+ 50%      { left:20px; }
+ 100%     {left:0;}
+}
+
+@keyframes bounce {
+ 0%       { left:5px; }
+ 25%, 75% { left:15px; }
+ 50%      { left:20px; }
+ 100%     {left:0;}
+}
+
+
+
+
+/*wefwefwefwefwefwefe*/
+
+.testfile1{
+  position: absolute;
+  top: 22%;
+  left: 34%;
+  width: 32%;
+  height: 35%;
+  background-size: cover;
+  background-position: inherit;
+  background-image: url(../img/32.jpeg);
+  padding: 10%;
+}
+
+.border1{
+  text-align: center;
+  padding-top: 2px;
+  width: 307px;
+  height: 68px;
+  background-color: white;
+  position: absolute;
+  top: 191px;
+  left: 0%;
+
+}
+
+.border1>h1{
+  font-size: 1.8em;
+  position: relative;
+  top: 0px;
+  font-family: robotext;
+  color: rgb(230,82,101);
+}
+
+
+.triangleGM{
+  color: white;
+  transform: rotate(270deg);
+  transform-origin: 10px;
+  position: absolute;
+  left: 63%;
+  top: 15.3%;
+}
+
+.tfre{
+  /*position: absolute;*/
+  color: rgb(230,82,101);
+  font-family: HelloStockholm-Alt;
+  font: 40px;
 }
