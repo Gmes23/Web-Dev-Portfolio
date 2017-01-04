@@ -14,6 +14,16 @@
 // });
 
 
+// 
+// $('.gmMain2').on('mousewheel', function() {
+//     $('.gmMainText2').animate({
+//         width: '100%'
+//         }, 290, function() {
+//     });
+// });
+
+
+
 
 $('.gmMain2').each(function(i) {
 
