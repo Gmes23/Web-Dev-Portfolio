@@ -262,6 +262,15 @@ a, a:hover, a:active, a:visited {
 
 }
 
+.gmMainText2{
+  position: absolute;
+  top: 200px;
+  left: 22%;
+  z-index: 5;
+  padding-right: 600px;
+
+}
+
 .gmMainText>h1{
   font-size: 3em;
   font-family: 'Montserrat', sans-serif;
@@ -278,7 +287,7 @@ a, a:hover, a:active, a:visited {
   {
     font-size: 3em;
   }
-  .gmMainText>h2
+  .gmMainText2>h2
     {
       font-size: 3em;
     }
@@ -292,7 +301,7 @@ a, a:hover, a:active, a:visited {
     font-size: 5em;
   }
 
-  .gmMainText>h2
+  .gmMainText2>h2
     {
       font-size: 5em;
     }
@@ -374,9 +383,10 @@ a, a:hover, a:active, a:visited {
   background-image: url("../img/21.png");
   background-size: cover;
   background-position: center;
-  left: 35.4334%;
+  left: 51.4334%;
   z-index: 3;
 }
+
 
 .gmMainPicS2{
   position: absolute;
@@ -386,9 +396,10 @@ a, a:hover, a:active, a:visited {
   background-image: url("../img/24.jpg");
   background-size: cover;
   background-position: center;
-  left: 35.4334%;
+  left: 50%;
   z-index: 3;
 }
+
 
 .gmMainPicS3{
   position: absolute;
@@ -398,7 +409,7 @@ a, a:hover, a:active, a:visited {
   background-image: url("../img/30inuse.jpg");
   background-size: cover;
   background-position: center;
-  left: 35.4334%;
+  left: 50%;
   z-index: 3;
 }
 
@@ -410,17 +421,8 @@ a, a:hover, a:active, a:visited {
   background-image: url("../img/10.jpg");
   background-size: cover;
   background-position: center;
-  left: 35.4334%;
+  left: 50%;
   z-index: 3;
-}
-.gmMainText>h2{
-  font-size: 3em;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  color: rgb(49,58,61);
-  text-transform: uppercase;
-
 }
 
 .gmProjectInfo{
@@ -432,8 +434,17 @@ a, a:hover, a:active, a:visited {
   left: 10%;
 }
 
+.gmMainText2>h2{
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(49,58,61);
+  text-transform: uppercase;
 
-.gmMainText>p{
+}
+
+.gmMainText2>p{
   font-size: 1.5em;
   font-family: 'Kano', sans-serif;
   font-style: normal;
@@ -444,7 +455,7 @@ a, a:hover, a:active, a:visited {
   text-transform: lowercase;
 }
 
-.gmMainText>a{
+.gmMainText2>a{
   font-family: 'moderno', sans-serif;
   font-style: normal;
   text-decoration: none, !important;
@@ -457,15 +468,15 @@ a, a:hover, a:active, a:visited {
 
 }
 
-.gmMainText>a:hover{
+.gmMainText2>a:hover{
   text-decoration: none;
   color: rgb(141,41,52);
 }
 
 
 .slideUp{
-	animation-name: grow;
-	-webkit-animation-name: grow;
+	animation-name: slideUp2;
+	-webkit-animation-name: slideUp2;
   -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
   transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
 
@@ -478,6 +489,114 @@ a, a:hover, a:active, a:visited {
 
 	visibility: visible !important;
 }
+
+@keyframes slideUp2 {
+	0% {
+    display: none;
+    height: 0px;
+		transform: translateY(100%);
+	}
+	100% {
+    height: 350px;
+		transform: translateY(0%);
+	}
+}
+
+
+
+
+
+
+.slideDown{
+	animation-name: Nogrow;
+	-webkit-animation-name: Nogrow;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+	animation-duration:  .7s;
+	-webkit-animation-duration:  .7s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+
+	visibility: visible !important;
+}
+
+
+/*@keyframes grow {
+0% {
+display: none;
+opacity: 0;
+height: 0%;
+}
+1% {
+display: block;
+opacity: 0;
+height: 0px;
+transform: scale(0);
+}
+100% {
+opacity: 1;
+height: 350px;
+transform: scale(1);
+}
+}*/
+
+
+@-moz-keyframes Nogrow {
+  0% {
+    display: none;
+    height: 350px;
+  }
+  1% {
+    display: block;
+    height: 350px;
+    /*transform: scale(0);*/
+  }
+  100% {
+    height: 0px;
+    /*transform: scale(1);*/
+  }
+}
+
+
+
+@keyframes Nogrow {
+  0% {
+    display: none;
+    height: 350px;
+  }
+  1% {
+    display: block;
+    height: 350px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @-moz-keyframes grow {
   0% {
@@ -495,39 +614,27 @@ a, a:hover, a:active, a:visited {
   }
 }
 
-/*@keyframes grow {
-  0% {
-    display: none;
-    opacity: 0;
-    height: 0%;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-    height: 0px;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 1;
-    height: 350px;
-    transform: scale(1);
-  }
-}*/
 
 
 @keyframes grow {
   0% {
     display: none;
+    bottom: 0px;
     height: 0px;
   }
   1% {
     display: block;
+    bottom: 0px;
     height: 0px;
   }
   100% {
+    bottom: 0px;
     height: 350px;
   }
 }
+
+
+
 
 @keyframes hehe {
   from {height: 350px;}

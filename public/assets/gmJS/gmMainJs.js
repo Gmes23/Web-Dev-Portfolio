@@ -1,8 +1,24 @@
 
+
+// element.is('.class1, .class2')
+//
+// if(element.hasClass("class"))
+//
+// .addEventListener('webkitAnimationEnd',function( event ) { myBox.style.display = 'none'; }, false);
+
+
+// p.then(function(value) {
+//    // fulfillment
+//   }, function(reason) {
+//   // rejection
+// });
+
+
+
 $('.gmMain2').each(function(i) {
 
 	var $wrap = $(this),
-		$active = $wrap.find('.gmshow').first(),
+		$active = $wrap.find('.active').first(),
 		$prev = $active.prev(),
 		$next = $active.next();
 
@@ -18,10 +34,24 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 
 	event.preventDefault();
 
-	// var thisUpdate = Date(milliseconds);
-	// lastUpdate = thisUpdate;
+	// var thisUpdate = new Date();
+  // lastUpdate = thisUpdate;
 	// if( thisUpdate - lastUpdate < 500 ) return;
 
+	$('.gmshow.active').each(function(){
+		var $wrap = $(this);
+		$wrap.find('.slideUp').removeClass('slideUp').addClass('slideDown');
+
+
+	}).on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
+		// if(event.target === event.currentTarget){  Lerp();  $(this).off(e);} }
+		// e.preventDefault();
+			Lerp();
+		 $(this).off(e);
+	});
+
+
+	function Lerp(){
 	$('.gmMain2').each(function() {
 
 		var $wrap = $(this),
@@ -30,6 +60,13 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 			$next = $wrap.find('.next'),
 
 			$tmp;
+
+			$('.gmshow.prev' || '.gmshow.next' ).each(function(){
+				var $wrap = $(this);
+				$wrap.find('.slideDown').removeClass('slideDown').addClass('slideUp');
+
+
+			})
 
 		//go back
 		if( deltaY === 1) {
@@ -74,8 +111,19 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 				.siblings()
 				.removeClass('next');
 		}
+
 	});
+ }
+
+
 });
+
+
+
+
+
+
+
 
 
 $('a').click(function(event) {
