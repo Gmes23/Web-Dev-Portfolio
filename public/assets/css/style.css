@@ -2,6 +2,12 @@ html{
   -webkit-font-smoothing: antialiased;
 }
 
+body{
+  touch-action: none;
+  -webkit-user-drag: none;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -718,6 +724,7 @@ display: none;
   width: 100%;
   padding-right: 16.6666666%;
   padding-left: 16.6666667%;
+  -webkit-overflow-scrolling: touch;
 
 }
 
