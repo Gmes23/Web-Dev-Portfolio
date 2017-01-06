@@ -4,27 +4,6 @@ $('.gmMainMenuButton').on('click', function(){
 		$('.sideLinesM').toggle();
 
 });
-// element.is('.class1, .class2')
-//
-// if(element.hasClass("class"))
-//
-// .addEventListener('webkitAnimationEnd',function( event ) { myBox.style.display = 'none'; }, false);
-
-
-// p.then(function(value) {
-//    // fulfillment
-//   }, function(reason) {
-//   // rejection
-// });
-
-
-//
-// $('.gmMain2').on('mousewheel', function() {
-//     $('.gmMainText2').animate({
-//         width: '100%'
-//         }, 290, function() {
-//     });
-// });
 
 
 
