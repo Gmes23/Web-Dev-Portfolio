@@ -138,6 +138,34 @@ a, a:hover, a:active, a:visited {
  margin-right: -50%;
 }
 
+/**/
+
+.sideLinesM2{
+ overflow: hidden;
+ text-align: center;
+ transform: translateY(-100%);
+}
+.sideLinesM2:before,
+.sideLinesM2:after {
+ background-color: white;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.sideLinesM2:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.sideLinesM2:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
+
+
 .gmNavfromMain:hover{
   color: rgb(49,58,61);
   text-decoration: none;
@@ -443,6 +471,8 @@ display: none;
       right: 25px;
       padding: 33px;
       top: -20px;
+      font-weight: bold;
+font-size: 17px;
 }
 .smallLetter{
   position: absolute;
@@ -1764,7 +1794,7 @@ to {height: 300px;}
   display: none;
   height: 100vh;
   width: 100%;
-  background-color: rgb(0,0,255);
+  background-color: #1957f3;
   position: absolute;
   z-index: 1000;
   overflow-x: hidden;
