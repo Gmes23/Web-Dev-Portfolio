@@ -8,7 +8,7 @@ var routes = require('./controllers/controller.js');
 var path = require('path');
 var PORT = process.env.PORT || 3000;
 
-app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }))
 app.use(methodOverride('_method'));
