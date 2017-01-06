@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio to show my work",
   "main": "server.js",
+  "engines": {
+   "node": "7.3.0"
+ },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -22,7 +25,7 @@
   "bugs": {
     "url": "https://thawing-falls-57617.herokuapp.com/"
   },
-  "homepage": "",
+  "homepage": "index",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
