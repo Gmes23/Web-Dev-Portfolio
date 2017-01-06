@@ -60,8 +60,8 @@ $('.gmMain2').each(function(i) {
 	$next.addClass('next');
 });
 
-$(document).on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
-  $(document).trigger('mousewheel');
+$('.gmMain2').on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
+  $('.gmMain2').trigger('mousewheel');
 });
 
 $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
