@@ -108,7 +108,7 @@ a, a:hover, a:active, a:visited {
   padding-left: 17.6666666%;
 }
 
-.gmNavfromMain{
+/*.gmNavfromMain{
   position: absolute;
   margin-left: 10px;
   top: 10%;
@@ -120,7 +120,60 @@ a, a:hover, a:active, a:visited {
   font-weight: 600;
   letter-spacing: 1px;
   z-index: 1000;
+}*/
+/*.gmMainMenuButton{
+  display: block;
+  border: none;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: rgb(69,63,63);
+  z-index: 1000;
+  position: absolute;
+  right: 25px;
+  padding: 33px;
+}*/
+
+.sideLinesM{
+ overflow: hidden;
+ text-align: center;
+ transform: translateY(-100%);
 }
+.sideLinesM:before,
+.sideLinesM:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.sideLinesM:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.sideLinesM:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+/*.sideLinesM{
+  display: inline-block;
+}*/
+
+/*.sideLinesM:before, .sideLinesM:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: rgb(141,41,52);
+}
+
+.sideLinesM:before {
+  left: -2.5px;
+}*/
 
 .gmNavfromMain:hover{
   /*text-decoration: line-through;*/
@@ -255,13 +308,13 @@ a, a:hover, a:active, a:visited {
 }
 
 
-.gmMainText{
+/*.gmMainText{
   position: absolute;
   top: 200px;
   left: 24%;
   z-index: 5;
 
-}
+}*/
 
 .gmMainText2{
   position: absolute;
@@ -282,9 +335,51 @@ a, a:hover, a:active, a:visited {
 }
 
 
-@media screen and (max-width:800px) and (min-width:400px)
+@media screen and (max-width:800px) and (min-width:300px)
 {
   /* intermediate text density on tablet devices */
+  .gmPhoto {
+    position: absolute;
+    top: 120px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 50.4334%;
+    z-index: 3;
+}
+  .gmPortfolioXX {
+    position: absolute;
+    top: 112px;
+    left: 24%;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(49,58,61);
+    text-decoration: none;
+}
+  .gmWork1Main {
+    display: block;
+    position: absolute;
+    top: 8px;
+    height: 100vh;
+    width: 100%;
+    padding-right: 4.666667%;
+    padding-left: 4.666667%;
+    font-family: Atami-Regular;
+    letter-spacing: 2px;
+}
+  .gmMainPic2 {
+    position: absolute;
+    top: 158px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/5.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 35.4334%;
+    z-index: 3;
+}
 .gmMainText>h1
   {
     font-size: 3em;
@@ -293,21 +388,349 @@ a, a:hover, a:active, a:visited {
     {
       font-size: 3em;
     }
+  .gmAllProjects {
+    position: absolute;
+    bottom: 17px;
+    left: 38%;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10px;
+    font-family: Kano;
+    letter-spacing: 2px;
+
+  }
+  .gmMainText2{
+    position: absolute;
+    top: 170px;
+    left: 8%;
+    bottom: 0px;
+    z-index: 5;
+    width: 260px;
+  }
+  .gmSocialMedia {
+    display: none;
+  }
+  .gmMainPicS2 {
+    position: absolute;
+    top: 148px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/24.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    z-index: 3;
+  }
+  .gmLogo{
+    top: 43px;
+    left: 20px;
+  }
+  .gmMainPicS1 {
+    position: absolute;
+    top: 155px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/21.png);
+    background-size: cover;
+    background-position: center;
+    left: 51.4334%;
+    z-index: 3;
+}
+.gmMainPicS3 {
+    position: absolute;
+    top: 169px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/30inuse.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    z-index: 3;
+}
+.gmMainPicS4 {
+    position: absolute;
+    top: 160px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/10.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    z-index: 3;
+}
+.gmWorkInfo1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 36px;
+}
+.work1Shower {
+    position: relative;
+    top: 10%;
+    height: 100vh;
+    width: 100%;
+}
+.workConGM {
+    position: relative;
+    margin-top: -13px;
+    height: 400px;
+    width: 100%;
+}
+.workTitle {
+    margin-bottom: 9px;
+    border-bottom: 5px solid rgb(49,58,61);
+    line-height: 34px;
+}
+.gmNavfromMain {
+display: none;
+}
+.gmMainMenuButton{
+  display: block;
+  border: none;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  color: rgb(69,63,63);
+  z-index: 1000;
+  position: absolute;
+  right: 25px;
+  padding: 33px;
+}
+.smallLetter{
+  position: absolute;
+  left: 10px;
+}
+.smallLetterRight{
+  position: absolute;
+  right: 10px;
+  top: 75px;
+}
+.gmMainText {
+  display: none;
+    /*position: absolute;
+    top: 200px;
+    left: 7%;
+    z-index: 5;
+    padding-right: 73px;
+    color: rgb(49,58,61);*/
+}
+.gmSkills {
+    position: absolute;
+    top: 27%;
+    left: 11%;
+    z-index: 5;
+    font-family: 'robotext';
+}
+.gmContactList {
+  position: absolute;
+  top: 29%;
+  left: 8%;
+  z-index: 5;
+  font-family: 'Montserrat', sans-serif;
+}
 }
 
 @media screen and (min-width:800px)
 {
   /* text can be spaced out a little better on a larger screen */
+  .gmContactList {
+      position: absolute;
+      top: 180px;
+      left: 24%;
+      z-index: 5;
+      font-family: 'Montserrat', sans-serif;
+  }
+  .gmPhoto{
+    position: absolute;
+    top: 200px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url("../img/10.jpg");
+    background-size: cover;
+    background-position: center;
+    left: 35.4334%;
+    z-index: 3;
+  }
+  .gmSkills{
+    position: absolute;
+    top: 200px;
+    left: 24%;
+    z-index: 5;
+    font-family: 'robotext';
+  }
+  .gmPortfolioXX{
+    position: absolute;
+    top: 170px;
+    left: 24%;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(49,58,61);
+    text-decoration: none;
+  }
+  .gmMainText {
+    position: absolute;
+    top: 200px;
+    left: 25%;
+    z-index: 5;
+  }
+  .gmMainMenuButton{
+    display:none;
+  }
+  .gmMainPic2{
+    position: absolute;
+    top: 200px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url("../img/5.jpg");
+    background-size: cover;
+    background-position: center;
+    left: 35.4334%;
+    z-index: 3;
+  }
+
 .gmMainText>h1
   {
     font-size: 5em;
   }
 
-  .gmMainText2>h2
-    {
+.gmMainText2>h2
+  {
       font-size: 5em;
-    }
+  }
+
+  .gmAllProjects{
+    bottom: 50px;
+    left: 50%;
+  }
+  .gmMainText2{
+    position: absolute;
+    top: 200px;
+    left: 22%;
+    bottom: 0px;
+    z-index: 5;
+    width: 260px;
+  }
+  .gmSocialMedia {
+      position: absolute;
+      width: 6.295%;
+      height: 100vh;
+      left: 0px;
+      top: 0px;
+      text-transform: lowercase;
+      z-index: 10;
+  }
+  .gmLogo {
+    font-family: HelloStockholm-Alt;
+    font-size: 60px;
+    top: 60px;
+    left: 20px;
+    letter-spacing: 5px;
+    position: absolute;
+    color: rgb(49,58,61);
+    z-index: 1000;
+  }
+  .gmMainPicS1{
+    position: absolute;
+    top: 200px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url("../img/21.png");
+    background-size: cover;
+    background-position: center;
+    left: 51.4334%;
+    z-index: 3;
+  }
+  .gmMainPicS2 {
+    position: absolute;
+    top: 200px;
+    width: 43.905%;
+    height: 350px;
+    background-image: url(../img/24.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 50%;
+    z-index: 3;
 }
+.gmMainPicS3{
+  position: absolute;
+  top: 200px;
+  width: 43.905%;
+  height: 350px;
+  background-image: url("../img/30inuse.jpg");
+  background-size: cover;
+  background-position: center;
+  left: 50%;
+  z-index: 3;
+}
+.gmMainPicS4{
+  position: absolute;
+  top: 200px;
+  width: 43.905%;
+  height: 350px;
+  background-image: url("../img/10.jpg");
+  background-size: cover;
+  background-position: center;
+  left: 50%;
+  z-index: 3;
+}
+.gmWorkInfo1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 80px;
+}
+.work1Shower {
+    position: relative;
+    top: 15%;
+    height: 100vh;
+    width: 100%;
+}
+
+.workConGM{
+  position: relative;
+  margin-top: 20px;
+  height:  400px;
+  width: 100%;
+}
+.workTitle {
+  margin-bottom: 20px;
+  border-bottom: 5px solid rgb(49,58,61);
+  line-height: 55px;
+}
+.gmWork1Main{
+  display: block;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  padding-right: 16.6666666%;
+  padding-left: 16.6666667%;
+  font-family: Atami-Regular;
+  letter-spacing: 2px;
+}
+.gmNavfromMain {
+    position: absolute;
+    margin-left: 10px;
+    top: 10%;
+    color: rgb(49,58,61);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'moderno';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1000;
+}
+
+}
+
+
+
+
+
+
+
 
 .gmMainPic1{
   position: absolute;
@@ -322,13 +745,13 @@ a, a:hover, a:active, a:visited {
 
 .gmMainText>h1:before {
     content: "FULL";
-    width: 105%;
+    /*width: 105%;*/
     position: absolute;
     color:rgb(84,182,195);
 }
 
 
-.gmMainPic2{
+/*.gmMainPic2{
   position: absolute;
   top: 200px;
   width: 43.905%;
@@ -338,7 +761,7 @@ a, a:hover, a:active, a:visited {
   background-position: center;
   left: 35.4334%;
   z-index: 3;
-}
+}*/
 
 .gmMainPic3{
   position: absolute;
@@ -377,7 +800,7 @@ a, a:hover, a:active, a:visited {
 }
 
 
-.gmMainPicS1{
+/*.gmMainPicS1{
   position: absolute;
   top: 200px;
   width: 43.905%;
@@ -387,10 +810,10 @@ a, a:hover, a:active, a:visited {
   background-position: center;
   left: 51.4334%;
   z-index: 3;
-}
+}*/
 
 
-.gmMainPicS2{
+/*.gmMainPicS2{
   position: absolute;
   top: 200px;
   width: 43.905%;
@@ -400,10 +823,10 @@ a, a:hover, a:active, a:visited {
   background-position: center;
   left: 50%;
   z-index: 3;
-}
+}*/
 
 
-.gmMainPicS3{
+/*.gmMainPicS3{
   position: absolute;
   top: 200px;
   width: 43.905%;
@@ -425,7 +848,7 @@ a, a:hover, a:active, a:visited {
   background-position: center;
   left: 50%;
   z-index: 3;
-}
+}*/
 
 .gmProjectInfo{
   position: absolute;
@@ -660,7 +1083,23 @@ a, a:hover, a:active, a:visited {
 }
 
 
+.gmMainH2Link{
+  text-decoration: none;
+  color: inherit;
+}
+.gmMainH2Link:hover{
+  text-decoration: none;
+  color: rgb(141,41,52);
+}
 
+.gmMainH3Link{
+  text-decoration: none;
+  color: inherit;
+}
+.gmMainH3Link:hover{
+  text-decoration: none;
+  color: white;
+}
 /*
 @keyframes grow {
 0% {
@@ -828,7 +1267,7 @@ to {height: 300px;}
 
 .gmAllProjects{
   position: absolute;
-    bottom: 50px;
+    /*bottom: 50px;*/
     height: 50px;
     font-size: 14px;
     text-align: center;
@@ -845,7 +1284,7 @@ to {height: 300px;}
   font-family: Kano;
   letter-spacing: 1px;
   color: rgb(49,58,61);
-  z-index: 1000;
+  z-index: 500;
   text-decoration: none;
 }
 
@@ -858,7 +1297,7 @@ to {height: 300px;}
   font-family: Kano;
   letter-spacing: 1px;
   color: rgb(49,58,61);
-  z-index: 1000;
+  z-index: 500;
 }
 
 .aboutGM{
@@ -871,7 +1310,7 @@ to {height: 300px;}
   padding-left: 16.6666667%
 }
 
-.gmPhoto{
+/*.gmPhoto{
   position: absolute;
   top: 200px;
   width: 43.905%;
@@ -881,15 +1320,15 @@ to {height: 300px;}
   background-position: center;
   left: 35.4334%;
   z-index: 3;
-}
+}*/
 
-.gmSkills{
+/*.gmSkills{
   position: absolute;
   top: 200px;
   left: 24%;
   z-index: 5;
   font-family: 'robotext';
-}
+}*/
 
 .gmSkills>p{
   /*line-height: 4px;*/
@@ -943,13 +1382,13 @@ to {height: 300px;}
   z-index: 3;
 }
 
-.gmContactList{
+/*.gmContactList{
   position: absolute;
   top: 180px;
   left: 24%;
   z-index: 5;
   font-family: 'Montserrat', sans-serif;
-}
+}*/
 
 .gmContactList>h1{
   font-weight: bold;
@@ -1012,7 +1451,7 @@ to {height: 300px;}
   z-index: 3;
 }
 
-.gmPortfolioXX{
+/*.gmPortfolioXX{
   position: absolute;
   top: 170px;
   left: 24%;
@@ -1020,7 +1459,7 @@ to {height: 300px;}
   font-family: 'Montserrat', sans-serif;
   color: rgb(49,58,61);
   text-decoration: none;
-}
+}*/
 
 .gmPortfolioSelect{
   color: rgb(49,58,61);
@@ -1101,7 +1540,7 @@ to {height: 300px;}
   background-image: url(../img/10.jpg);
 }
 
-.gmWork1Main{
+/*.gmWork1Main{
   display: block;
   position: absolute;
   top: 0px;
@@ -1111,14 +1550,14 @@ to {height: 300px;}
   padding-left: 16.6666667%;
   font-family: Atami-Regular;
   letter-spacing: 2px;
-}
+}*/
 
-.work1Shower{
+/*.work1Shower{
   position: relative;
   top: 15%;
   height: 100vh;
   width: 100%;
-}
+}*/
 
 .work1Header{
   position: relative;
@@ -1129,18 +1568,18 @@ to {height: 300px;}
   text-align: left;
 }
 
-.workTitle {
+/*.workTitle {
   margin-bottom: 20px;
   border-bottom: 5px solid rgb(49,58,61);
   line-height: 55px;
-}
+}*/
 
-.workConGM{
+/*.workConGM{
   position: relative;
   margin-top: 20px;
   height:  400px;
   width: 100%;
-}
+}*/
 
 .rightSideWork{
   position: absolute;
@@ -1199,12 +1638,12 @@ to {height: 300px;}
   background-position: center;
   background-image: url(../img/10.jpg);
 }
-.gmWorkInfo1{
+/*.gmWorkInfo1{
   position: relative;
   width: 100%;
   height: auto;
   padding: 80px;
-}
+}*/
 
 .gmWorkFooter{
   position: relative;
@@ -1386,4 +1825,78 @@ to {height: 300px;}
   color: rgb(230,82,101);
   font-family: HelloStockholm-Alt;
   font: 40px;
+}
+
+.gmMenuTakeOver{
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+  position: absolute;
+  z-index: 1000;
+  /*right: 0px;*/
+  /*top: 0px;*/
+  overflow-x: hidden;
+  top: 0px;
+  /*border-radius: 300%;*/
+  /*transform: translate(-50%, -50%) scale(2);*/
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+
+.slideUpMenu{
+  top:inherit;
+    /*top: -55px;*/
+  animation-name: slideUp5;
+  -webkit-animation-name: slideUp5;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  animation-duration:  .7s;
+  -webkit-animation-duration:  .7s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+
+  visibility: visible !important;
+}
+
+@keyframes slideUp5 {
+	0% {
+    display: none;
+    /*height: -40px;*/
+		transform: translateY(-100%);
+	}
+	100% {
+    height: 100vh;
+    /*border-radius: 300%;*/
+
+		transform: translateY(0%);
+	}
+}
+
+.gmOptionMenuHolder {
+    position: absolute;
+    top: 24%;
+    left: 21%;
+    /*text-align: center;*/
+}
+
+.socialLinksConforMenu{
+  position: absolute;
+  bottom: 0px;
+}
+
+.socialMenuLinks{
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+font-family: 'Abyssopelagic';
+font-weight: 900;
+letter-spacing: 2px;
+
 }

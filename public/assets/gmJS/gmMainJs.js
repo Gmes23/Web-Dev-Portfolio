@@ -1,5 +1,9 @@
 
+$('.gmMainMenuButton').on('click', function(){
+	$('.gmMenuTakeOver').toggle();
+		$('.sideLinesM').toggle();
 
+});
 // element.is('.class1, .class2')
 //
 // if(element.hasClass("class"))
@@ -14,7 +18,7 @@
 // });
 
 
-// 
+//
 // $('.gmMain2').on('mousewheel', function() {
 //     $('.gmMainText2').animate({
 //         width: '100%'
@@ -51,14 +55,15 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 	$('.gmshow.active').each(function(){
 		var $wrap = $(this);
 		$wrap.find('.slideUp').removeClass('slideUp').addClass('slideDown');
-
-
-	}).on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
-		// if(event.target === event.currentTarget){  Lerp();  $(this).off(e);} }
-		// e.preventDefault();
-			Lerp();
-		 $(this).off(e);
+		$wrap.on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
+			// if(event.target === event.currentTarget){  Lerp();  $(this).off(e);} }
+			// e.preventDefault();
+				// Lerp();
+			 $(this).off(e);
+		});
 	});
+
+Lerp();
 
 
 	function Lerp(){
