@@ -5,6 +5,7 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var app = express();
 var routes = require('./controllers/controller.js');
+var path = require('path');
 var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true}));
