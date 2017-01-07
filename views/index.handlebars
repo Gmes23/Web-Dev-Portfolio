@@ -171,6 +171,74 @@
 
 
 <script type="text/javascript">
+
+
+
+
+
+
+// $(document).ready(function() {
+//   'use strict';
+//
+//   $('.gmMain2').on('mousewheel DOMMouseScroll', function(event) {
+//     var $active = $('.gmshow.active');
+//     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+//
+//       var $new = $active.prev();
+//       $active.parent().removeClass('prev');
+//       $active.parent().addClass('next');
+//
+//     } else {
+//
+//
+//       var $new = $('.gmshow.active').next();
+//       $active.parent().addClass('prev');
+//       $active.parent().removeClass('next');
+//
+//
+//     }
+//
+//     if ($new.length > 0) {
+//
+//
+//       $active.removeClass('active');
+//       $new.addClass('active');
+//
+//       // Here I call scrollIntoView of the element. However the options to add animation to it
+//       // are not widely supported, so it will jump instantly into view.
+//       // Here you could try to animate it using jQuery
+//       // $new[0].scrollIntoView({
+//       //   behavior: "smooth", // or "auto" or "instant"
+//       //   block: "start" // or "end"
+//       // });
+//     }
+//
+//     return false;
+//   });
+// });
+//
+//
+// $('.gmMain2').on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
+//   $('.gmMain2').trigger('mousewheel');
+// });
+//
+
+
+
+
+
+
+
+
+
+$('.gmMain2').on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
+$('.gmMain2').trigger('mousewheel');
+});
+
+
+
+//
+
 $('.gmMain2').each(function(i) {
 
   var $wrap = $(this),
@@ -185,14 +253,17 @@ $('.gmMain2').each(function(i) {
   $next.addClass('next');
 });
 
-$('.gmMain2').on('touchmove', function() { //touchmove works for iOS, I don't know if Android supports it
-  $('.gmMain2').trigger('mousewheel');
-});
+
+
+
+// function(event){ if(event.target === $('.gmshow')){ stop(); } }
+
+
 
 $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
 
   event.preventDefault();
-
+  //
   // var thisUpdate = new Date();
   // lastUpdate = thisUpdate;
   // if( thisUpdate - lastUpdate < 500 ) return;
@@ -200,15 +271,24 @@ $('.gmMain2').on('mousewheel', function(event, delta, deltaX, deltaY) {
   $('.gmshow.active').each(function(){
     var $wrap = $(this);
     $wrap.find('.slideUp').removeClass('slideUp').addClass('slideDown');
-    $wrap.on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
-      // if(event.target === event.currentTarget){  Lerp();  $(this).off(e);} }
-      // e.preventDefault();
-        // Lerp();
-       $(this).off(e);
-    });
   });
 
-Lerp();
+
+  $('.slideDown').on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
+    // if(event.target === event.currentTarget){  Lerp();  $(this).off(e);} }
+    // e.preventDefault();
+    Lerp();
+    $('.gmshow.prev' || '.gmshow.next' ).each(function(){
+      var $wrap = $(this);
+      $wrap.find('.slideDown').removeClass('slideDown').addClass('slideUp');
+
+
+    })
+    // return false;
+    $('.gmshow.active').off(e);
+    // $(this).empty();
+  })
+// Lerp();
 
 
   function Lerp(){
@@ -221,12 +301,6 @@ Lerp();
 
       $tmp;
 
-      $('.gmshow.prev' || '.gmshow.next' ).each(function(){
-        var $wrap = $(this);
-        $wrap.find('.slideDown').removeClass('slideDown').addClass('slideUp');
-
-
-      })
 
     //go back
     if( deltaY === 1) {
