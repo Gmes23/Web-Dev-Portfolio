@@ -1878,3 +1878,38 @@ letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
 }
+
+.gmshow.prev {
+  top:inherit;
+    /*top: -55px;*/
+  animation-name: slideUp5;
+  -webkit-animation-name: slideUp5;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  animation-duration:  .7s;
+  -webkit-animation-duration:  .7s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+
+  visibility: visible !important;
+}
+.gmshow.next {
+  top:inherit;
+    /*top: -55px;*/
+  animation-name: slideUp5;
+  -webkit-animation-name: slideUp5;
+  -webkit-transition: all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition:  all .7s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+  animation-duration:  .7s;
+  -webkit-animation-duration:  .7s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+
+  visibility: visible !important;
+}
