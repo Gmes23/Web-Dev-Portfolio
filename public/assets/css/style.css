@@ -333,15 +333,15 @@ a, a:hover, a:active, a:visited {
 }
   .gmPortfolioXX {
     position: absolute;
-        top: 83px;
-        left: 6%;
-        z-index: 5;
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        /* font-family: 'Montserrat', sans-serif; */
-        color: rgb(49,58,61);
-        text-decoration: none;
+    top: 147px;
+    left: 6%;
+    z-index: 5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: rgb(49,58,61);
+    text-decoration: none;
 }
   .gmWork1Main {
     display: block;
@@ -504,11 +504,15 @@ font-size: 17px;
 }
 .gmContactList {
   position: absolute;
-  top: 29%;
-  left: 8%;
+  top: 24%;
+  left: 5%;
   z-index: 5;
   font-family: 'Montserrat', sans-serif;
 }
+.contactNodisplay{
+  display: none;
+}
+
 }
 
 @media screen and (min-width:800px)
