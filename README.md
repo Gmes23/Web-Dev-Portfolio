@@ -2,7 +2,7 @@
 
 <a name="dir"></a>
 
-Its online now check it out [here](https://thawing-falls-57617.herokuapp.com/)
+Its online now check it out [here](www.gerardomestanza.com/)
 
 After several days I finished my web dev portfolio!
 
@@ -13,19 +13,19 @@ The hardest part was probably making the scrolling function in the main page. Us
 
 
 ####Web App Demo:
-[![web app](https://cloud.githubusercontent.com/assets/20157000/21745910/75b0a94c-d503-11e6-857a-811e884eb2ca.jpg)](https://thawing-falls-57617.herokuapp.com)
+[![web app](https://cloud.githubusercontent.com/assets/20157000/21745910/75b0a94c-d503-11e6-857a-811e884eb2ca.jpg)](www.gerardomestanza.com/)
 
 
 
-[![web app](https://cloud.githubusercontent.com/assets/20157000/21745916/88765f9a-d503-11e6-82d2-ae5e29bf813c.png)](https://thawing-falls-57617.herokuapp.com)
+[![web app](https://cloud.githubusercontent.com/assets/20157000/21745916/88765f9a-d503-11e6-82d2-ae5e29bf813c.png)](www.gerardomestanza.com/)
 
 ####Mobile View:
 
-[![android view](https://cloud.githubusercontent.com/assets/20157000/21745915/8432bbc2-d503-11e6-9ec0-42f89981ce00.png)](https://thawing-falls-57617.herokuapp.com)
+[![android view](https://cloud.githubusercontent.com/assets/20157000/21745915/8432bbc2-d503-11e6-9ec0-42f89981ce00.png)](www.gerardomestanza.com/)
 
 ####The Mobile Menu:
 
-[![android view](https://cloud.githubusercontent.com/assets/20157000/21745959/b3c7f856-d504-11e6-8456-eea3da67000c.png)](https://thawing-falls-57617.herokuapp.com)
+[![android view](https://cloud.githubusercontent.com/assets/20157000/21745959/b3c7f856-d504-11e6-8456-eea3da67000c.png)](www.gerardomestanza.com/)
 
 
 
