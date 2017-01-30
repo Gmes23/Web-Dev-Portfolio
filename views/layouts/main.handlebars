@@ -12,13 +12,13 @@
 	  <meta property="og:description" content="Gerardo Mestanza, Front-end Developer producing high quality responsive websites and Unique portfolios for creatives." />
 	  <meta property="og:url" content="http://www.gerardomestanza.com/" />
 	  <meta property="og:site_name" content="gerardo mestanza" />
-		<meta property="og:image" name="thumb" content="http://gerardomestanza.com/assets/img/myLogo.png">
+		<meta property="og:image" name="thumb" content="http://gerardomestanza.com/assets/img/myLogoWeb.png">
 		<!--  twitter stuff-->
 		<meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Freelance Front-end Developer producing high quality responsive websites and Unique portfolios for creatives"/>
     <meta name="twitter:title" content="Portfolio | Gerardo Mestanza - Full-Stack Developer"/>
     <meta name="twitter:site" content="@Gmes23"/>
-    <meta name="twitter:image" content="http://www.gerardomestanza.com/assets/img/myLogo.png"/>
+    <meta name="twitter:image" content="http://www.gerardomestanza.com/assets/img/myLogoWeb.png"/>
     <meta name="twitter:creator" content="@Gmes23"/>
 		<!-- links and scripts -->
 		<link rel="shortcut icon" href="assets/img/myLogo.png" sizes="64×64">
@@ -35,12 +35,26 @@
 <script type="text/javascript">
 //
 $('.gmMainMenuButton').on('click', function(){
-	$('.gmMenuTakeOver').toggle();
+	$('.gmMenuTakeOver').toggle().on("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(e){
+
+		$('.gmMenuTakeOver').toggleClass('slideUpMenu slideDownMenuGM');
+	});
 		$('.sideLinesM').toggle();
 		$('.sideLinesM2').toggle();
 			$('.gmLogo').toggle();
 
 });
+
+//
+// $('.gmMainMenuButton').on('click', function(){
+// 	$(".gmMenuTakeOver").toggle(function() {
+// 	    // $(this).animate({height: '100vh'});
+// 	}, function() {
+// 	    $(this).animate({height: '0'});
+// 	});
+//
+//
+// });
 
 
 $('a').click(function(event) {
