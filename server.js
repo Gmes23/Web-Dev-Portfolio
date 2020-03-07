@@ -22,4 +22,4 @@ app.listen(PORT);
 
 app.use('/', routes);
 
-console.log("listening on port" + PORT);
+console.log("listening on port " + PORT);
