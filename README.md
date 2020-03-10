@@ -29,7 +29,7 @@ The hardest part was probably making the scrolling function in the main page. Us
 
 
 
-###Tech I use:
+###Tech used:
 
 I wanted to show of my coding skills or what I learned so far, so aside from the require npm packages
 to get the website deploy, everything In my portfolio is coded with css,html,jquery/javascript. I use no
