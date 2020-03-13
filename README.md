@@ -11,7 +11,7 @@ My web dev portofolio is built on Node.js and express, fully compatible on mobil
 The hardest part was probably making the scrolling function in the main page. Users scroll up or down to see the rest of my works I have on display. I use both the mousewheel and preventdefault function from jquery for this effect, but ran into a problem on mobile devices. I was quickly able to fix this by creating a function that triggers the mousewheel function on touchmove. 
 
 ### updates
-- soon to be built on react
+- soon to be built on react.
 
 
 
